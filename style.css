@@ -1,0 +1,375 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+:root {
+    --primary: #79B058;
+    --light-100: #ffffff;
+    --dark-25: #c7c7c7;
+    --dark-50: #8e8e8e;
+    --dark-75: #565656;
+    --dark-100: #1e1e1e;
+
+    --fs-12: 12px;
+    --fs-16: 16px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-32: 32px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 120px 80px;
+    display: flex;
+    gap: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* CONTENT */
+/* contact us */
+.contact-us {
+    width: 100%;
+    padding: 24px 32px;
+    border: 1px solid var(--dark-25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#contact-us-title {
+    font-size: var(--fs-20);
+    font-weight: 700;
+    color: var(--dark-75);
+    text-align: center;
+}
+
+.contact-us-msg-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-us-btn-box {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+#contact-us-msg-btn {
+    padding: 15px 20px;
+    border-radius: 100px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--light-100);
+    font-size: var(--fs-16);
+}
+
+#contact-us-call-btn {
+    padding: 15px 20px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid var(--dark-25);
+    color: var(--dark-75);
+    font-size: var(--fs-16);
+}
+
+
+/* course info */
+.course-info-box {
+    width: 100%;
+    padding: 24px 32px;
+    border: 1px solid var(--dark-25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.course-info-title-box {
+    width: 100%;
+    text-align: center;
+}
+
+#course-info-title {
+    font-size: var(--fs-20);
+    font-weight: 700;
+    color: var(--dark-75);
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-info-lines {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.course-info-lines-icons {
+    width: 24px;
+    height: 24px;
+}
+
+.course-info-lines-title {
+    color: var(--dark-75);
+    font-weight: 500;
+    font-size: var(--fs-16);
+}
+
+
+/* key fetures */
+.key-features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.key-features-title-box {
+    width: 100%;
+    text-align: center;
+}
+
+#key-features-title {
+    font-size: var(--fs-20);
+    font-weight: 700;
+    color: var(--dark-75);
+}
+
+.features-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.features {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--dark-25);
+    border-radius: 10px;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-title {
+    text-align: center;
+    font-size: var(--fs-16);
+    color: var(--dark-75);
+    font-weight: 500;
+}
+
+
+/* buy button */
+.course-purchase-btn-box {
+    display: flex;
+    gap: 16px;
+}
+
+#course-buy-btn {
+    padding: 15px 48px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--light-100);
+    font-size: var(--fs-16);
+}
+
+#course-saved-btn {
+    width: 161px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--dark-25);
+    color: var(--dark-75);
+    font-size: var(--fs-16);
+}
+
+/* price */
+.course-price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#course-price {
+    font-size: var(--fs-32);
+    font-weight: 500;
+}
+
+#course-discount-price {
+    text-decoration: line-through;
+    font-size: var(--fs-20);
+    color: var(--dark-50);
+}
+
+#course-discount-percentage {
+    font-weight: 500;
+    color: var(--primary);
+    font-size: var(--fs-20);
+}
+
+/* title */
+.course-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#course-title {
+    font-size: var(--fs-24);
+    font-weight: 700;
+    color: var(--dark-100);
+}
+
+#course-publisher {
+    font-size: var(--fs-16);
+    color: var(--dark-50);
+}
+
+/* main */
+.course-description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* video */
+.video-box {
+    position: relative;
+    width: 50%;
+}
+
+#video {
+    border-radius: 10px;
+}
+
+.course-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 80px;
+}
+
+
+/* HEADER */
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 16px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dark-25);
+
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#header-logo {
+    width: 120px;
+    height: auto;
+}
+
+#header-contact-btn {
+    padding: 15px 20px;
+    border-radius: 100px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--light-100);
+    font-size: var(--fs-16);
+}
+
+
+/* RESPONSIVENESS */
+@media (width <= 1080px) {
+    body {
+        padding: 105px 20px;
+    }
+    .header {
+        padding: 16px 20px;
+    }
+}
+
+@media (width <= 875px) {
+    body {
+        flex-direction: column;
+    }
+    .video-box {
+        width: 100%;
+    }
+    .course-details {
+        width: 100%;
+    }
+}
+
+@media (width <= 432px) {
+    .features-box {
+        gap: 12px;
+    }
+
+    .course-description {
+        gap: 32px;
+    }
+
+    .course-details {
+        gap: 24px;
+    }
+
+    .course-purchase-btn-box {
+        width: 100%;
+    }
+    
+    #course-buy-btn {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    
+    #course-saved-btn {
+        width: 100%;
+    }
+
+    .contact-us-btn-box {
+        width: 100%;
+    }
+    
+    #contact-us-msg-btn {
+        width: 100%;
+        padding: 15px 0px;
+    }
+    
+    #contact-us-call-btn {
+        width: 100%;
+        padding: 15px 0px;
+    }
+
+    .contact-us, .course-info-box {
+        padding: 24px;
+    }
+}
