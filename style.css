@@ -15,6 +15,9 @@
     --dark-75: #565656;
     --dark-100: #1e1e1e;
 
+    --primary-hover: #8ec76e;
+    --secondary-hover: #f1f1f1;
+
     --fs-12: 12px;
     --fs-16: 16px;
     --fs-20: 20px;
@@ -27,6 +30,7 @@ body {
     height: 100vh;
     padding: 120px 80px;
     display: flex;
+    /* justify-content: center; */
     gap: 40px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -34,6 +38,49 @@ body {
 
 button {
     cursor: pointer;
+}
+
+/* PAYMENT PAGE */
+/* user data input from */
+.user-info-input-box {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid var(--dark-25);
+    border-radius: 20px;
+}
+
+#user-info-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#input-name, #input-number {
+    font-size: var(--fs-16);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-25);
+}
+
+#input-submit {
+    font-size: var(--fs-16);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 16px;
+    background-color: var(--primary);
+    color: var(--light-100);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary-hover);
+        transition: ease 300ms;
+    }
 }
 
 /* CONTENT */
@@ -74,6 +121,11 @@ button {
     border: none;
     color: var(--light-100);
     font-size: var(--fs-16);
+
+    &:hover {
+        background-color: var(--primary-hover);
+        transition: ease 300ms;
+    }
 }
 
 #contact-us-call-btn {
@@ -83,6 +135,11 @@ button {
     border: 1px solid var(--dark-25);
     color: var(--dark-75);
     font-size: var(--fs-16);
+
+    &:hover {
+        background-color: var(--secondary-hover);
+        transition: ease 300ms;
+    }
 }
 
 
@@ -178,6 +235,52 @@ button {
     font-weight: 500;
 }
 
+/* coupon code */
+.coupon-code-box {
+    width: 100%;
+    padding: 24px 32px;
+    border: 1px solid var(--dark-25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.coupon-code-title-box {
+    width: 100%;
+    text-align: center;
+}
+
+.coupon-code-input-box {
+    display: flex;
+    gap: 8px;
+}
+
+#coupon-code-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid var(--dark-25);
+    border-radius: 10px;
+    font-size: var(--fs-16);
+    text-transform: uppercase;
+}
+
+#coupon-code-apply-btn {
+    width: 30%;
+    padding: 10px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    font-size: var(--fs-16);
+    color: var(--light-100);
+}
+
+#coupon-code-title {
+    font-size: var(--fs-20);
+    font-weight: 700;
+    color: var(--dark-75);
+}
 
 /* buy button */
 .course-purchase-btn-box {
@@ -192,9 +295,15 @@ button {
     border: none;
     color: var(--light-100);
     font-size: var(--fs-16);
+
+    &:hover {
+        background-color: var(--primary-hover);
+        transition: ease 300ms;
+    }
 }
 
 #course-saved-btn {
+    display: none;
     width: 161px;
     padding: 15px;
     border-radius: 10px;
@@ -202,6 +311,11 @@ button {
     border: 1px solid var(--dark-25);
     color: var(--dark-75);
     font-size: var(--fs-16);
+
+    &:hover {
+        background-color: var(--secondary-hover);
+        transition: ease 300ms;
+    }
 }
 
 /* price */
@@ -304,6 +418,11 @@ button {
     border: none;
     color: var(--light-100);
     font-size: var(--fs-16);
+
+    &:hover {
+        background-color: var(--primary-hover);
+        transition: ease 300ms;
+    }
 }
 
 
