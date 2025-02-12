@@ -883,7 +883,7 @@
     <section id="page-2" style="display: none;">
         <div class="user-info-input-box">
             <div class="back-btn-title-box">
-                <div id="pay-page-back-btn" class="back-btn">
+                <div id="pay-page-back-btn" class="back-btn" onclick="window.location.href='index.html'">
                     <span class="material-symbols-outlined">arrow_back</span>
                 </div>
                 <div class="payment-title-box">
@@ -896,12 +896,12 @@
             <!-- <form id="user-info-input" action="https://api.sheetmonkey.io/form/bgTELCXJeE9EHFudf3sRjZ" method="post" -->
                 <input id="input-name" type="text" name="name" placeholder="Name" required>
                 <input id="input-number" type="number" name="mobile" placeholder="Mobile no" required>
-                <input id="input-submit" type="submit" value="Make Payment">
+                <input id="input-submit" type="submit" value="Make Payment" min="10">
             </form>
     
             <div class="qr-code-box" style="display: none;">
                 <div class="qr-code-timer-box">
-                    <span id="qr-code-timer-title">This page will expire in <br> (DO NOT REFRESH!)</span>
+                    <span id="qr-code-timer-title">This page will expire in<br>(DO NOT REFRESH!)</span>
                     <span id="qr-code-timer">0:00</span>
                 </div>
     
@@ -1258,6 +1258,10 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
     </section>
 
     <script src="index.js"></script>

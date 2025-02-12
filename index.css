@@ -67,6 +67,34 @@ button {
     padding: 0px 0px;
 }
 
+/* LOADING ANIMATION */
+#loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side,#79b058 94%,#0000) top/9px 9px no-repeat,
+           conic-gradient(#0000 30%,#79b058);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+ }
+ 
+ @keyframes spinner-c7wet2 {
+    100% {
+       transform: rotate(1turn);
+    }
+ }
 
 
 /* PAYMENT PAGE */

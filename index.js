@@ -91,6 +91,10 @@ function elementVisibility(element, visibility) {
 
 userInfoInputForm1.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    const loadingSpinner = document.getElementById('loading-spinner');
+    elementVisibility(loadingSpinner, "grid");
+
     let name = document.getElementById("input-name").value;
     let mobile = document.getElementById("input-number").value;
     let data = { name, mobile };
@@ -114,7 +118,10 @@ userInfoInputForm1.addEventListener("submit", function (e) {
                 startTime();
             }
         })
-        .catch((error) => console.error("Error:", error));
+        .catch((error) => console.error("Error:", error))
+        .finally(() => {
+            elementVisibility(loadingSpinner, "none");
+        });
 });
 
 function generateQRCode(userPhone) {
@@ -135,6 +142,7 @@ function startTime() {
             clearInterval(interval);
             timerRunning = false;
             alert('If you are getting any problem or need any help! CONTACT US')
+            window.location.href = "index.html";
         }
     }, 1000);
 }
